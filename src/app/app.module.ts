@@ -10,6 +10,7 @@ import { ZoomImageComponent } from './components/zoom-image/zoom-image.component
 import { ProductImageComponent } from './components/product-image/product-image.component';
 import { CheckoutCardComponent } from './components/checkout-card/checkout-card.component';
 import { SideMenuComponent } from './component/side-menu/side-menu.component';
+import { CloseComponent } from './components/icons/close/close.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SideMenuComponent } from './component/side-menu/side-menu.component';
     ZoomImageComponent,
     ProductImageComponent,
     CheckoutCardComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    CloseComponent
   ],
   imports: [
     BrowserModule
