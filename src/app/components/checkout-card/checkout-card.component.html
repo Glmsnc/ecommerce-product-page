@@ -4,17 +4,17 @@
     </div>
     <div class="float-card-content">
 
-        <div *ngIf="false" class="empty-container">
+        <div *ngIf="quantity == 0" class="empty-container">
          <span  class="empty">Your cart is empty</span>
         </div>
-        <div class="grid-checkout">
+        <div *ngIf="quantity > 0" class="grid-checkout">
             <img class="product-img" src="assets/images/image-product-1.jpg">
             <span class="product-name">Fall Limited Edition Sneakers</span>
             <span class="product-price">${{unityPrice}} x {{quantity}} <span class="total-price">${{unityPrice * quantity}}</span>  </span>
             <img class="product-delete" src="assets/images/icon-delete.svg">
             
         </div>
-        <button class="primary-button">Checkout</button>
+        <button *ngIf="quantity > 0" class="primary-button">Checkout</button>
 
     </div>
     <div>

@@ -15,16 +15,16 @@
             <h2 class="product-info-price">$125.00 <span class="product-info-discunt">50%</span></h2>
             <h3 class="product-info-old-price">$250.00</h3>
             <div class="product-info-quantity">
-                <button class="outline minus">
+                <button class="outline minus" (click)="subItem()">
                     <span class="icons"><img src="assets/images/icon-minus.svg" alt="minus"></span>
                 </button>
-                <span class="center-text">0</span>
-                <button class="outline plus">
+                <span class="center-text">{{quantity}}</span>
+                <button class="outline plus" (click)="addItem()">
                     <span class="icons"><img src="assets/images/icon-plus.svg" alt="plus"></span>
                 </button>
 
             </div>
-            <button class="primary-button"> 
+            <button class="primary-button" (click)="sendCart()"> 
                 <icon-cart></icon-cart> <span>Add to cart </span></button>
         </div>
        

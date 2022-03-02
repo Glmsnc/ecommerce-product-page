@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import CartService from '../service/cart.service';
 
 @Component({
   selector: 'product-page',
@@ -8,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class ProductPageComponent implements OnInit {
 
   openZoom = false;
+  quantity = 0;
+  price = 125;
   images = [
     {
       source: 'assets/images/image-product-1-thumbnail.jpg',
@@ -31,7 +34,7 @@ export class ProductPageComponent implements OnInit {
     },
 
   ]
-  constructor() { }
+  constructor(private readonly cartService: CartService) { }
 
   ngOnInit(): void {
   }
@@ -39,5 +42,23 @@ export class ProductPageComponent implements OnInit {
   openZoomItem(){
     console.log('return value')
     this.openZoom = false;
+  }
+
+  sendCart(){
+    if(this.quantity-1 > 0 ){
+      console.log('enviando')
+      this.cartService.setCart({
+        img: this.images[0].source,
+        quantity: this.quantity,
+        price: this.price
+      });
+    }
+  }
+
+  addItem(){
+    this.quantity++;
+  }
+  subItem(){
+    this.quantity-1 >= 0? this.quantity--: '';
   }
 }
