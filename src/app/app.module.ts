@@ -6,6 +6,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { MainLayoutComponent } from './components/main-layout/main-layout.component';
 import { ProductPageComponent } from './components/product-page/product-page.component';
 import { IconCartComponent } from './components/icons/icon-cart/icon-cart.component';
+import { ZoomImageComponent } from './components/zoom-image/zoom-image.component';
+import { ProductImageComponent } from './components/product-image/product-image.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { IconCartComponent } from './components/icons/icon-cart/icon-cart.compon
     NavbarComponent,
     MainLayoutComponent,
     ProductPageComponent,
-    IconCartComponent
+    IconCartComponent,
+    ZoomImageComponent,
+    ProductImageComponent
   ],
   imports: [
     BrowserModule

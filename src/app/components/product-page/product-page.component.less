@@ -1,43 +1,5 @@
 @import '../../../theme/variables.less';
 
-.product-images{
-    display: flex;
-    flex-direction: column;
-}
-.focused-image{
-    width: 20%;
-
-    img{
-        border-radius: 15px;
-        display: block;
-        margin: 10px 10px 20px;
-        width: 380px;
-        height: 380px;
-    }
-}
-
-[type=radio] {
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-[type=radio]:checked + label img {
-    opacity: 50%;
-    border: 3px solid @orange;
-    width: 74px;
-    height: 74px;
-}
-.thumbnail-images{
-    img{
-        border-radius: 15px;
-        margin: 10px 10px 20px;
-        width: 80px;
-        height: 80px;
-    }
-}
-
 
 .product-container{
     display: flex;

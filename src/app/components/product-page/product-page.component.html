@@ -1,25 +1,8 @@
 <div class="product-container">
-    <div class="product-images">
-        <div class="focused-image">
-            <img src="assets/images/image-product-1.jpg">
-        </div>
-
-        <div class="thumbnail-images">
-            <input type="radio" id="image1" name="image-selected" value="1">
-            <label for="image1"><img src="assets/images/image-product-1-thumbnail.jpg"></label>
-           
-            <input type="radio" id="image2" name="image-selected" value="2">
-            <label for="image2"><img src="assets/images/image-product-2-thumbnail.jpg"></label>
-           
-            <input type="radio" id="image3" name="image-selected" value="3">
-            <label for="image3"><img src="assets/images/image-product-3-thumbnail.jpg"></label>
-           
-            <input type="radio" id="image4" name="image-selected" value="4">
-            <label for="image4"><img src="assets/images/image-product-4-thumbnail.jpg"></label>
-           
-
-        </div>
-    </div>
+    <product-image
+    [images]="images"
+    (openZoom)="openZoom = !openZoom"
+    ></product-image>
     <div class="product-info">
         <div>
             <h4 class="product-info-company-name">
@@ -47,3 +30,5 @@
        
     </div>
 </div>
+
+<zoom-image [images]="images" [show]="true"></zoom-image>
