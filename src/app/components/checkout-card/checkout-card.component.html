@@ -11,7 +11,7 @@
             <img class="product-img" src="assets/images/image-product-1.jpg">
             <span class="product-name">Fall Limited Edition Sneakers</span>
             <span class="product-price">${{unityPrice}} x {{quantity}} <span class="total-price">${{unityPrice * quantity}}</span>  </span>
-            <img class="product-delete" src="assets/images/icon-delete.svg">
+            <img (click)="clear()" class="product-delete" src="assets/images/icon-delete.svg">
             
         </div>
         <button *ngIf="quantity > 0" class="primary-button">Checkout</button>

@@ -20,4 +20,11 @@ export class CheckoutCardComponent implements OnInit {
     })
   }
 
+  clear(){
+    this.cartService.setCart({
+      price: 0,
+      quantity: 0
+    })
+  }
+
 }
