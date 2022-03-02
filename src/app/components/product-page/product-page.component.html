@@ -1,7 +1,7 @@
 <div class="product-container">
     <product-image
     [images]="images"
-    (openZoom)="openZoom = !openZoom"
+    (openZoom)="openZoom = true;"
     ></product-image>
     <div class="product-info">
         <div>
@@ -31,4 +31,5 @@
     </div>
 </div>
 
-<zoom-image [images]="images" [show]="true"></zoom-image>
+<zoom-image [images]="images"
+[(show)]="openZoom"></zoom-image>

@@ -36,4 +36,8 @@ export class ProductPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openZoomItem(){
+    console.log('return value')
+    this.openZoom = false;
+  }
 }
