@@ -1,0 +1,117 @@
+@import '../../../theme/variables.less';
+
+.product-images{
+    display: flex;
+    flex-direction: column;
+}
+.focused-image{
+    width: 20%;
+
+    img{
+        border-radius: 15px;
+        display: block;
+        margin: 10px 10px 20px;
+        width: 380px;
+        height: 380px;
+    }
+}
+
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+[type=radio]:checked + label img {
+    opacity: 50%;
+    border: 3px solid @orange;
+    width: 74px;
+    height: 74px;
+}
+.thumbnail-images{
+    img{
+        border-radius: 15px;
+        margin: 10px 10px 20px;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+.product-container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+}
+
+.product-info{
+    padding-left: 50px;
+    padding-top: 20px;
+    &-company-name{
+        font-weight: @font-weight-heavy;
+        color: @orange;
+        margin: 1.33em 0;
+    }
+    &-line-name{
+        margin: 0.67em 0;
+        font-size: 40px;
+    }
+    &-description{
+        margin: 1em 0;
+        color: #68707d;
+        line-height: 1.25;
+    }
+    &-price{
+        margin: 0.83em 0;
+        font-size: 1.5em;
+    }
+    &-old-price{
+        margin: 1em 0;
+        color: #b6bcc8;
+        text-decoration: line-through;
+    }
+    &-discunt{
+        background-color: #ffede0;
+        color: #ff7d1a;
+        border-radius: 10px;
+        padding: 5px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    &-quantity{
+        background-color: @light-grayish-blue;
+        border-radius: 10px;
+        width: 150px;
+        display: inline-grid;
+        grid-template-columns: 4fr 2fr 4fr;
+        text-align: center;
+        margin-right: 10px;
+        padding: 10px;
+        height: 30px;
+        font-weight: @font-weight-heavy;
+        
+    }
+    
+}
+
+
+.icons{
+    width: 32px;
+    height: 32px;   
+    icon-cart{
+        margin-right: 15px;
+    }
+  
+}
+
+.minus{
+    text-align: start;
+}
+.plus{
+    text-align: end;
+}
+
+::ng-deep svg path{
+    fill: white !important  ;
+}

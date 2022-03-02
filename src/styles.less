@@ -1,0 +1,43 @@
+@import './theme/variables.less';
+
+*{
+    font-family: "Kumbh Sans";
+    font-size: 16px;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.outline{
+    background: none;
+    border: none;
+}
+
+
+.flex-container{
+    display: flex;
+}
+
+.primary-button{
+    border-radius: 8px;
+    background-color: @orange;
+    border: none;
+    color: @white;
+    font-weight: @font-weight-heavy;
+    padding: 10px 5%;
+    width: 200px;  
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.center-text{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
