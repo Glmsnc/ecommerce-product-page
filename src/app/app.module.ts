@@ -9,6 +9,7 @@ import { IconCartComponent } from './components/icons/icon-cart/icon-cart.compon
 import { ZoomImageComponent } from './components/zoom-image/zoom-image.component';
 import { ProductImageComponent } from './components/product-image/product-image.component';
 import { CheckoutCardComponent } from './components/checkout-card/checkout-card.component';
+import { SideMenuComponent } from './component/side-menu/side-menu.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CheckoutCardComponent } from './components/checkout-card/checkout-card.
     IconCartComponent,
     ZoomImageComponent,
     ProductImageComponent,
-    CheckoutCardComponent
+    CheckoutCardComponent,
+    SideMenuComponent
   ],
   imports: [
     BrowserModule

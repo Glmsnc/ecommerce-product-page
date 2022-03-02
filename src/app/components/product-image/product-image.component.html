@@ -1,13 +1,13 @@
 <div class="product-images">
-    <div class="focused-image" (click)="showImage()">
+    <div class="focused-image">
         <button class="change-button previous" (click)="previous()"> <img src="assets/images/icon-previous.svg"></button>
-        <img [src]="focusedImage">
+        <img (click)="showImage()" [src]="focusedImage">
         <button class="change-button next" (click)="next()" > <img src="assets/images/icon-next.svg"></button>
     </div>
 
     <div class="thumbnail-images">
         <div style="display: inline;" *ngFor="let image of images">
-            <input type="radio" [id]="image.key" (change)="focusedImage = image.inFocus" [name]="focusedImage" [value]="image.inFocus">
+            <input type="radio" [id]="image.key" (change)="focusedImage = image.inFocus" [name]="focusedImage" [value]="image.inFocus" (value)="focusedImage">
             <label [for]="image.key"><img [src]="image.source"></label>
         </div>
     

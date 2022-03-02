@@ -70,3 +70,28 @@
 .previous{
     left: 10px;
 }
+
+@media screen and(max-width: 700px){
+    .product-images{
+        .thumbnail-images{
+            display: none;
+        }
+        .focused-image{
+            width: 100%;
+            img{
+                width: 100%;
+                object-fit: fill;
+                margin: 0;
+                border-radius: 0;
+            
+            }
+        }
+    }
+    .change-button{
+        display: inline-flex;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+
+    }
+}

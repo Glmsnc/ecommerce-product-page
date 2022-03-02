@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import CartService from '../service/cart.service';
 
 @Component({
   selector: 'navbar',
@@ -8,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   checkoutShow = false;
-  constructor() { }
+  quantity = 0;
+  sideMenu = false;
+  constructor(private readonly cartService: CartService) { }
 
   ngOnInit(): void {
+    this.cartService.cart$.subscribe(
+        item => this.quantity = item.quantity
+    );
   }
 
 }

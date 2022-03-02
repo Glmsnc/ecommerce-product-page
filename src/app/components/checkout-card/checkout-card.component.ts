@@ -24,7 +24,8 @@ export class CheckoutCardComponent implements OnInit {
     this.cartService.setCart({
       price: 0,
       quantity: 0
-    })
+    });
+    this.show = false;
   }
 
 }
