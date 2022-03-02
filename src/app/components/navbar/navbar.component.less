@@ -1,0 +1,45 @@
+@import '../../../theme/variables.less';
+
+header{
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 16px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: space-between;
+    height: 64px;
+    border-bottom: 1px solid @grayish-blue;
+}
+
+.menu-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.menu-item{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    &-link{
+        padding-left: 0;
+        cursor:pointer;
+        margin: 0 10px;
+        color: @grayish-blue;
+    }
+}
+
+.avatar-image{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+
+.cart-button{
+    padding-right: 16px;
+}
