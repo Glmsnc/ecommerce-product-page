@@ -8,6 +8,7 @@ import { ProductPageComponent } from './components/product-page/product-page.com
 import { IconCartComponent } from './components/icons/icon-cart/icon-cart.component';
 import { ZoomImageComponent } from './components/zoom-image/zoom-image.component';
 import { ProductImageComponent } from './components/product-image/product-image.component';
+import { CheckoutCardComponent } from './components/checkout-card/checkout-card.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ProductImageComponent } from './components/product-image/product-image.
     ProductPageComponent,
     IconCartComponent,
     ZoomImageComponent,
-    ProductImageComponent
+    ProductImageComponent,
+    CheckoutCardComponent
   ],
   imports: [
     BrowserModule

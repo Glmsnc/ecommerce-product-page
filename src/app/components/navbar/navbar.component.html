@@ -14,9 +14,11 @@
         </div>
     </div>
     <div class="flex-container">
-        <button class="outline cart-button">
+        <checkout-card [show]="checkoutShow"></checkout-card>
+        <button class="outline cart-button" (click)="checkoutShow = !checkoutShow;">
             <img src="assets/images/icon-cart.svg" alt="Carrinho">
         </button>
         <img src="assets/images/image-avatar.png" alt="Avatar" class="avatar-image">
     </div>
+  
 </header>
