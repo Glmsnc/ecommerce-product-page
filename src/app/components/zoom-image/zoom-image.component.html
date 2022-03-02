@@ -1,4 +1,7 @@
 <div *ngIf="show" class="container-modal">
-<button (click)="close()">Close</button>
-<product-image [images]="images"></product-image>
+        <div class="container-content">
+            <button class="outline" (click)="close()">
+                <img src="assets/images/icon-close.svg"></button>
+            <product-image [images]="images"></product-image>
+        </div>
 </div>
